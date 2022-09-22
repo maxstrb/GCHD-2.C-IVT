@@ -1,7 +1,6 @@
 # omlouvám se ale zde budu používat max a min funkce, v max sortu jsem dokázal že jsem schopný je napsat
 # Toto je merge sort schonpý pracovat s jakýmkoli listem
 import random
-import timeit
 
 def main():
     a = [5, 6, 74, 4, 6, 54, 1, 5, 6, 1, 32, 1, 859, 15, 156, 651, 32, 0, 65, 1, 32, 5, 46, 54]
@@ -42,9 +41,6 @@ def test():
             return
         
     print("Everything went fine ✔")
-
-def time_it():
-    print(timeit.timeit("main()", number=100))
 
 if __name__ == '__main__':
     #main()
