@@ -43,5 +43,5 @@ def test():
     print("Everything went fine ✔")
 
 if __name__ == '__main__':
-    #main()
+    main()
     #test()
