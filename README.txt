@@ -1,1 +1,1 @@
-Prosím nekopírujte tento kód jako domácí úkoly. Zkuste to alespoň trochu upravit / použít pouze jako inpiraci. Kdyby jste potřebovali pomoc pochopit část kódu nebo samotný algoritmos tak stačí napsat, mě to baví. (Za jakékoli gramatické chyby neodpovídám)
+Prosím nekopírujte tento kód jako domácí úkoly. Zkuste to alespoň trochu upravit / použít pouze jako inpiraci. Kdyby jste potřebovali pomoc pochopit část kódu nebo samotný algoritmus tak stačí napsat, mě to baví. (Za jakékoli gramatické chyby neodpovídám)
