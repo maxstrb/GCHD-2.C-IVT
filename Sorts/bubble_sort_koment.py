@@ -12,11 +12,9 @@ def bubble_sort(mNL):
     for n in range(len(mNL)-1):
         for i in range(len(mNL)-n-1):
             if mNL[i] > mNL[i+1]:
-                temp = mNL[i+1]
 
                 # Pomocí těchto 2 řádek vyměním potřebné itemy
-                mNL[i+1] = mNL[i]
-                mNL[i] = temp
+                mNL[i+1], mNL[i] = mNL[i], mNL[i+1]
 
     return mNL
 
