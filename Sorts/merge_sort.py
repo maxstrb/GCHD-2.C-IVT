@@ -6,25 +6,25 @@ def main():
     print(f"The sorted list is {merge_sort(a)}")
     
 def halfs_sort(l1, l2):
-    # Přivravení listů se kterými se pracuje
+    f1 = 0
+    f2 = 0
+    
+    
     l1, l2 = l1.copy(), l2.copy()
+    
     output = []
     
-    # Vytvoří smičku která se zastaví když délka jednoho listu je < 1
-    while min(len(l1), len(l2)) != 0:
-        # Vyberu minimum ze 2 možností a to přidám do listu output
-        min_n = min(l1[0], l2[0])
+    while f1 < len(l1) and f2 < len(l2):
+        min_n = min(l1[f1], l2[f2])
         output.append(min_n)
         
-        # Najdu ze kterého tato možnost byla a smažu tento item
-        if min_n in l1:
-            l1.pop(0)
+        if min_n == l1[f1]:
+            f1 += 1
         else:
-            l2.pop(0)
+            f2 += 1
     
-    # Jakmile se smička zastaví tak vím že jeden list už nemá prvky a druhý ano -> všechny zbývající prvky připojím k listu output
-    output.extend(l1)
-    output.extend(l2)
+    output.extend(l1[f1:])
+    output.extend(l2[f2:])
     
     return output
 
@@ -32,9 +32,7 @@ def merge_sort(l):
     if len(l) in {0, 1}:
         return l
 
-    # Vytvářím rekurzivní funkci která vrací halfs_sort ze dvou listů sezařených touto funkcí -> vytvoří takový strom funkcí
     return halfs_sort(merge_sort(l[:len(l)//2]), merge_sort(l[len(l)//2:]))
-
 
 def test():
     for _ in range(100):
