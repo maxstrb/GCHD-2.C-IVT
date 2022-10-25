@@ -1,25 +1,25 @@
 # optimized - 100% neopisujte, tohle by opravdu poznal, na vlastní nebezpečí
-def f1(Karel: int):
-    # prime numbers up to and including 'Karel'
+def f1(Rudofl: int):
+    # prime numbers up to and including 'Rudofl'
     
     # Handling very funny people
-    if type(Karel) != int:
+    if type(Rudofl) != int:
         raise TypeError("Entry to this function must be an int")
     
-    if Karel < 2:
+    if Rudofl < 2:
         return []
     # End of handling very funny people
     
-    Karel += 1
-    MNL = [True] * Karel
+    Rudofl += 1
+    MNL = [True] * Rudofl
     MNL[0] = MNL[1] = False
     
-    for František in range(2, int(Karel**0.5) + 1):
-        if MNL[František]:
-            for Josef in range(František * František, Karel, František):
+    for René in range(2, int(Rudofl**0.5) + 1):
+        if MNL[René]:
+            for Josef in range(René * René, Rudofl, René):
                 MNL[Josef] = False
                 
-    return [František for František, Jakub in enumerate(MNL) if Jakub]
+    return [René for René, Já in enumerate(MNL) if Já]
 
 # větší šance na, že nepozná okopírování když se to trochu změní
 def f2(n: int):
