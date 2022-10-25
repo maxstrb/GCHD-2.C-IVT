@@ -1,5 +1,5 @@
 # optimized - 100% neopisujte, tohle by opravdu poznal, na vlastní nebezpečí
-def f1(Rudofl: int):
+def f1(Rudofl: int): # neboli golf
     # prime numbers up to and including 'Rudofl'
     
     # Handling very funny people
