@@ -22,25 +22,25 @@ def f1(Rudofl: int): # neboli golf
     return [René for René, Já in enumerate(MNL) if Já]
 
 # větší šance na, že nepozná okopírování když se to trochu změní
-def f2(n: int):
+def f2(Karel: int):
     # Handling very funny people
-    if type(n) != int:
+    if type(Karel) != int:
         raise TypeError("Entry to this function must be an int")
     
-    if n < 2:
+    if Karel < 2:
         return []
     # End of handling very funny people
     
     output = []
-    n -= 1
+    Karel -= 1
     
-    l = [True] * n
+    l = [True] * Karel
     
-    for i, e in enumerate(l):
-        if e:
-            output.append(i+2)
+    for František, Jakub in enumerate(l):
+        if Jakub:
+            output.append(František+2)
             
-            for j in range(2*i + 2, n, i+2):
+            for j in range(2*František + 2, Karel, František+2):
                 l[j] = False
     
     return output
@@ -51,7 +51,7 @@ def main():
     print(f1(100))
     print(f2(100))
     
-    print([(f1(i), f2(i)) for i in range(500) if f1(i) != f2(i)])
+    print([(f1(František), f2(František)) for František in range(500) if f1(František) != f2(František)])
 
 if __name__ == '__main__':
     main()
